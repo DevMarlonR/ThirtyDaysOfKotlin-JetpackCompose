@@ -1,0 +1,358 @@
+<resources>
+    <string name="app_name">Days Of Kotlin</string>
+    <string name="day">Day</string>
+    <string name="thirteen_days_of">30 Days of</string>
+    <string name="kotlin">KOTLIN</string>
+
+    <string name="sobre_kotlin">Sobre o Kotlin</string>
+    <string name="desc_kotlin">Kotlin é uma linguagem de programação moderna que é interoperável com Java e pode ser usada para desenvolver uma ampla variedade de aplicativos, incluindo Android, servidor, desktop e aplicativos web.
+        Kotlin foi desenvolvido pela JetBrains, uma empresa conhecida por suas ferramentas de desenvolvimento, como o IntelliJ IDEA, tendo como líder do projeto, o Andrey Breslav que é um dos principais arquitetos da linguagem. Kotlin foi anunciado pela JetBrains em julho de 2011 e a versão 1.0 foi lançada em 15 de fevereiro de 2016, e agora em junho de 2024, Jetbrains lançou a versão 2.0, com um compilador mais rápido e multiplataforma.
+        Em maio de 2017, o Google anunciou que a linguagem príncipal de aplicativos Android nativo deixaria de ser o Java para ser Kotlin.</string>
+
+    <string name="ide">IDEs</string>
+    <string name="desc_ide">
+        <string name="principal">Primeiramente, vamos entender o que é IDE. Integrated Development Environment (ambiente de desenvolvimento integrado) é onde vamos escrever nossos códigos para que ele nos ajude com a sintaxe, compilação, entre outras coisas.
+Para Kotlin, há algumas IDEs principais como:\n</string>
+        <string name="first_ide"> - <b>IntelliJ</b>, desenvolvido pela JetBrains, se você lembra do dia 1, ela é a criadora da linguagem Kotlin.\n</string>
+        <string name="second_ide"> - <b>Visual Studio Code</b>, uma das IDEs mais famosas, muito utilizada por conta da sua versatilidade, customização e simplicidade, criada pela Microsoft, é uma boa opção também.\n</string>
+        <string name="third_ide"> - <b>Android Studio</b>, para quem já pensa em utilizar o Kotlin para desenvolvimento de aplicativos Android, essa é a opção perfeita, já que é a IDE oficial do Google para o desenvolvimento de aplicativos.\n</string>
+        <string name="fourth_ide"> - <b>Kotlin Playground</b>, para você que quer apenas testar Kotlin ou não tem espaço em seu dispositivo, essa é uma opção ótima, já que é uma IDE online, precisa apenas de um navegador e conexão com a internet.\n</string>
+    </string>
+
+    <string name="fun_main">Função main()</string>
+    <string name="desc_fun_main">
+        <string name="tile">Vamos focar no que realmente importa, o CÓDIGO!\n</string>
+        <string name="principal">
+            Para começar, é fundamental entender a função main. No Kotlin,
+            a função main serve como o ponto de entrada do programa, é como se fosse a faixa
+            de largada dos corredores. É nela que o compilador sabe onde deve iniciar a execução
+            do código. Sem a função main, o compilador não saberia por onde começar, tornando a
+            definição dessa função crucial para qualquer aplicação.
+        </string>
+        <string name="chamada">Observe a imagem acima com a sintaxe básica da função main em Kotlin.</string>
+    </string>
+
+    <string name="print">Imprimindo na tela</string>
+    <string name="desc_print">
+        <string name="principal">
+            Hoje aprenderemos a escrever algo na tela, mas antes preciso te contar sobre a maldição do "Hello World". Que diz que, se a primeira coisa que você fizer com a tecnologia não for uma saudação ao mundo, essa tecnologia não será dominada por você. Se é verdade, eu não sei, mas eu não arriscaria 😅😉 então, vamos resolver isso logo.
+Na sua IDE escolhida, nas chaves {} da função main criada anteriormente vamos escrever o comando print() ou println().\n</string>
+        <string name="explain_print">A diferença entre os dois comandos é que o print() imprime sua frase apenas, já o println(), imprime sua frase e pula uma linha, muito útil para formatar textos e facilitar a leitura.
+Dentro dos parenteses, "()" do seu comando escolhido, vamos passar nossa frase entre aspas duplas, eu explicarei porque somente com aspas duplas nos próximos dias, continue acompanhando. Na minha saudação, coloquei em português e o comando ficou assim.\n</string>
+        <string name="code"><b>println("Olá, Mundo!")\n</b></string>
+        <string name="last">Nosso código está pronto, procure na sua IDE um botão que irá fazer o programa rodar, normalmente está no canto direito superior, pode ser uma seta para a direita ▶️ ou um &quot;Run&quot;.\n</string>
+        <string name="error">Caso seu código tenha dado algum tipo de erro, verifique se o comando digitado não foi com um P maiúsculo, certifique-se de que o código está idêntico ao da imagem acima.</string>
+    </string>
+
+    <string name="val_var">Variáveis</string>
+    <string name="desc_val_var">
+        <string name="initial">Na aula passada, dissemos &quot;Olá&quot; ao Mundo, mas e se quisermos dizer &quot;Olá&quot; para diferentes pessoas, basta trocar no print e colocar o nome de quem quisermos, certo? Sim! Irá funcionar, mas nosso código não ficará dinâmico, utilizaremos uma variável para resolver isso, vem comigo!\nUma variável é um espaço armazenado na memória para guardarmos um dado, ficou complexo? Explicarei melhor.\n</string>
+        <string name="principal">Você quer guardar um brinquedo para utilizar depois, então você resolve pegar uma caixa, mas você sabe que mais para frente terá mais brinquedos e você sabe que cada caixa só pode armazenar um brinquedo, então você como uma pessoa inteligente decide definir uma identificação na caixa, por exemplo, para o seu brinquedo preferido você coloca o nome de &quot;meuBrinquedoFavorito&quot; e dentro dessa caixa terá o seu brinquedo favorito, mas e se o brinquedo favorito mudar? Você terá que tirar o primeiro para colocar o novo brinquedo favorito. Variável é o mesmo, só que no computador, temos locais de memória (caixas) com uma identificação para armazenar um dado (brinquedo), ficou mais fácil de entender, né?
+            No seu código da aula anterior, modificaremos o print, antes dele criaremos uma val (variável imutável) com o identificador chamado &quot;nome&quot;, será com esse identificador que pegaremos o que tem dentro dessa variável e com o operador de atribuição &quot;=&quot; passaremos o dado que será armazenado por essa variável, eu coloquei o meu nome, mas você pode passar o seu.
+            Para printar o nome, apagaremos o mundo do nosso print e colocaremos o nome da nossa variável. O meu é &quot;nome&quot;, ficando:\n
+        </string>
+        <string name="print1">print(&quot;Olá, nome!&quot;)\nRode o código e confira a saída.\n</string>
+        <string name="explain">Percebe-se que a saída foi &quot;Olá, nome!&quot; e não era esse o esperado, isso é porque o nome foi passado como literal entre as aspas duplas, para resolver isso colocaremos um &quot;$&quot; antes do identificador nome, ficando:\n</string>
+        <string name="print1">print(&quot;Olá, $nome!&quot;)\nRode o código e confira a saída.\n</string>
+        <string name="var">Colocaremos a saudação em uma variável também, mas como quero que uma hora a saída seja &quot;Olá&quot; e depois &quot;Oi&quot;, tenho que definir como &quot;var&quot; ao invés de val. Uma var (variável mutável) permite que troquemos o conteúdo posteriormente no código, diferente da val (variável imutável), verifique na imagem acima como ficou o final.\n</string>
+        <string name="final">Dia longo, mas aprendemos bastante coisa, pratique isso e até amanhã!</string>
+    </string>
+
+    <string name="data_type">Tipos de dados primitivos</string>
+    <string name="data_type_desc">
+        <string name="initial">Praticou muito a aula de ontem? Tenho certeza de que sim! Então, vou te mostrar hoje tipos diferentes que uma variável pode armazenar.\n</string>
+        <string name="principal">Quando criamos uma val ou var, o compilador &quot;por baixo dos panos&quot; define um tipo de dado segundo o conteúdo que passamos. Ontem criamos duas variáveis do tipo String, hoje vou te explicar todos os tipos primitivos do Kotlin.\n</string>
+        <string name="data_types">
+            🟣 String → É uma sequência de caracteres, podendo ser letras, números, símbolos, outros símbolos e até tudo junto, utilizada para armazenar mensagens, como endereço, nomes e até números de telefone. Para passar informações a uma variável do tipo String é necessário estar entre aspas duplas.\n
+            🟣 Int → O Int é a definição de número inteiro, todos aqueles números que não têm casa decimal, ou seja, vírgulas de precisão. Podemos definir como Int variáveis para idade, ano ou quantidade de produtos, por exemplo. Você deve estar se perguntando, se String consegue armazenar números também, porque não criamos tudo como String. A resposta é simples, porque quando precisamos somar números, a String não dará o resultado esperado.\n
+            🟣 Double → Quando precisamos de precisão nos números, o melhor tipo de dado é o Double, que define casas decimais após a vírgula. Podemos criar variáveis do tipo Double, salário ou metragem, por exemplo. Assim como o Int ela também faz operações matemáticas.\n
+            🟣 Boolean → Por fim, temos o tipo booleano que define se algo é verdadeiro ou falso, no caso do Kotlin, se algo é &quot;true&quot; ou &quot;false&quot;. Podemos definir uma variável do tipo Boolean para informações como trabalhaHomeOffice, notificacoesAtivada entre outras.\n
+        </string>
+        <string name="final_types">Verifique na imagem acima como definimos o tipo da variável e as maneiras de passar o conteúdo da variável. Após o identificador, passamos dois pontos &quot;:&quot; e em seguida o dado da variável. Caso queira que o compilador defina sozinho o tipo da variável, não é necessário colocar.</string>
+    </string>
+    
+    <string name="operators">Operadores aritméticos</string>
+    <string name="operators_desc">
+        <string name="initial">Ontem citei sobre os tipos Int e Double fazerem operações matemáticas, hoje trabalharemos isso, operações aritméticas. Mas fique tranquilo(a) que você não precisa ser um mestre da matemática para entender a aula de hoje.\n</string>
+        <string name="principal">Na matemática temos as operações básicas como: soma(+), subtração(-), multiplicação(*) e divisão(/), vamos trabalhar isso no Kotlin, para realizarmos uma operação utilizamos o símbolo da operação desejada entre dois números, podendo ser o número literal ou variável do tipo Int, ou Double, veja um exemplo:\n</string>
+        <string name="code">N &quot;símbolo&quot; N\n</string>
+        <string name="operators_examples">
+            + → Idêntico ao que estamos acostumados, para somar utilizamos o sinal de mais entre dois números, 1 + 1, ou podemos utilizar duas variáveis do tipo Int, ou Double, por exemplo, duas variáveis criadas anteriormente como x recebendo 1 e y recebendo 2, x + y e até mesmo um número e uma variável.\n
+            - → Da mesma forma, temos a subtração que utilizamos o sinal de menos entre dois números, 2 - 2, ou como explicado anteriormente, podemos utilizar variáveis para realizar a operação.\n
+            * → Com o asterisco fazemos a operação de multiplicação, essa operação seria a que mais muda, mas da para se acostumar tranquilamente.\n
+            / -> Com a barra fazemos a divisão, vale lembrar que quando dividimos um valor por uma variável, temos que cuidar para que a variável não seja 0.\n
+            % -> Esse símbolo não tira a porcentagem, ele é o operador MOD. O resto da divisão, 10 % 2 o resultado é 0, muito útil para checarmos se um número é ímpar ou par.
+        </string>
+        <string name="final">Essas foram as operações aritméticas, não se esqueçam de testar o código da imagem acima, espero que tenham entendido!</string>
+    </string>
+    
+    <string name="comparison">Operadores de comparação</string>
+    <string name="comparison_desc">
+        <string>Tranquila a aula de ontem, né? Então, a de hoje também será, fica tranquilo. Caso você tenha achado muito difícil, não tem problema, uma dica é esquecer o resultado da operação. Quem faz a conta é o computador agora, você só precisa saber o que cada operação faz para conseguir realizar uma lógica. Você consegue! Hoje trabalharemos com operadores de comparação.\n</string>
+        <string>Da mesma forma que os operadores aritméticos, os de comparação estará entre dois números ou expressão, expressão podemos combinar de ser um operador aritmético (1 + 1 ou 4/2, por exemplo).\n</string>
+        <string>1+1 &quot;símbolo&quot; 5\n</string>
+        <string>
+            O retorno será booleano true ou false\n
+            &gt; → &quot;maior&quot; - retorna se a primeira expressão é maior que a segunda\n
+            &lt; → &quot;menor&quot; - retorna se a primeira expressão é menor que a segunda\n
+            &gt;= → &quot;maior ou igual&quot; - retorna se a primeira expressão é maior ou igual que a segunda\n
+            &lt;= → &quot;menor ou igual&quot; - retorna se a primeira expressão é menor ou igual à segunda.\n
+            == → &quot;igual&quot; - esse é o igual a que estamos acostumados, se uma expressão é igual a outra, somente não se confundir com o apenas um igual &quot;=&quot;, sendo o operador de atribuição.
+        </string>
+    </string>
+
+    <string name="logic">Operadores lógicos</string>
+    <string name="logic_desc">
+        <string>Para finalizar os operadores, falaremos sobre operadores lógicos, que compara duas expressões (que podem ser compostas por operadores aritméticos e de comparação).\n</string>
+        <string>Dica: A leitura de operações grandes, será sempre nessa sequência.\nAritméticos → Comparações → Lógicos\n</string>
+        <string>
+            O retorno dessa operação também será um valor booleano, true ou false.\n
+            &amp;&amp; → &quot;E&quot; - Operador que compara duas ou mais expressões e apenas retora true quando todas as expressões tem retorno true, por exemplo:\n
+            1 &lt; 2 &amp;&amp; 1+2 &gt;= 3\n
+            O retorno será true.\n
+            || → &quot;Ou&quot; - Operador que compara duas ou mais expressões e retorna true se pelo menos uma expressão for verdadeira, por exemplo:\n
+            1 == 3 || 3+5 &gt; 10 || true\n
+            Nesse caso é true porque bastou que aquele true no final torne a expressão verdadeira.\n
+            ! → &quot;Não&quot; - Operador de negação, ele é um operador para utilizar com os outros acima, ele deixa a expressão ao oposto do seu valor booleano, por exemplo:\n
+            !true retorna false\n
+            !(3 &gt; 5) retorna true\n
+            E da para você mesclar todos os operadores acima, vamos dar um exemplo real, para comprar um produto em uma loja, você precisa ser maior do que 15 anos e ter um documento oficial ou ter um documento de um responsável com idade maior ou igual a 18 anos e não ser pagamento por dinheiro.\n
+            idade &gt; 15 &amp;&amp; documentoOficial || idadeDocumentoResponsável &gt;= 18 &amp;&amp; !pagamentoEmDinheiro.\n
+            Analise a imagem acima e tente rodar o código e fazer seus testes! Até amanhã, que temos um conteúdo bem legal para usar tudo isso que aprendemos nesses 3 dias.
+        </string>
+    </string>
+
+    <string name="if_else">If/Else</string>
+    <string name="if_else_desc">
+        Para finalizar 10 dias de conteúdo, aprenderemos a realizar condições no nosso código. Imagine que desenvolvemos um aplicativo de filmes, mas nosso usuário tem menos de 18 anos. Como faremos um filtro dos filmes que ele não pode assistir ?\n
+        Simples, para isso utilizaremos o if, que tem a função de rodar uma parte do código ou não, dependendo se a condição for true ou false. Se a idade do usuário for maior que 18, o usuário pode assistir, em código ficará:\n
+        if(idade > 18) {\n
+        \t println(&quot;Você pode assistir&quot;)\n
+        }\n
+        E se a idade for menor? O usuário ficará sem uma resposta? Para resolver isso, colocamos o else, se a idade do usuário for maior que 18, o usuário pode assistir, senão ele não pode, em código ficará:\n
+        if(idade > 18) {\n
+        \t println(&quot;Você pode assistir.&quot;)\n
+        } else {\n
+        \t println(&quot;Você não pode assistir.&quot;)\n
+        }\n
+        (A frase dentro do print é entre aspas duplas)\n
+        Podemos fazer diversas condições no nosso código, basta colocar o if e uma expressão. Caso queira mais de uma expressão na mesma condição, coloque mais um if na frente do else abra parênteses &quot;()&quot; e sua nova expressão. Essa expressão pode ser os operadores que retornam um valor booleano ou até uma variável do tipo booleano que tenha um valor.\n
+        Analise a sintaxe do código na imagem, rode o código acima de exemplo e faça seus testes!
+    </string>
+
+    <string name="when">when</string>
+    <string name="when_desc">
+        Estou muito feliz que ainda esteja por aqui, na última aula vimos if/else e fizemos alguns pequenos testes, mas e quando temos diversas opções? Colocar if/else funciona? Sim, funciona sem problemas, mas o código além de ficar enorme, não fica legível e hoje aprenderemos o when para melhorar isso.\n
+        A sintaxe do when é bem tranquila, basta passar a palavra reservada when e um conjunto de parênteses (), dentro desses parênteses você passará a variável que deseja avaliar, fora dos parênteses abrimos e fechamos chaves, e dentro dele passaremos os casos possíveis, temos algumas formas de passar os casos, explico por tópicos para você.\n
+        ➣ A primeira maneira é a comum, passando apenas um caso, pode ser um número, uma string, um valor booleano, dependendo do valor da sua variável.
+        ➣ A segunda maneira é apenas possível para números (Int/Double) que há uma sequência, basta colocar o in e criar uma sequência, por exemplo:\n
+        in 1..10\n
+        para a variável que tem o valor entre 1 e 10, receberá esse caso.
+        ➣ A terceira maneira é passar casos por vírgulas, muito útil para quando não há uma sequência de números ou textos entre aspas duplas.\n
+        ➣ A última é para qualquer caso que não esteja incluso nos casos anteriores, com o else, sempre que houver uma variável que não se encaixe em nenhum caso, será nesse último caso que ela vai entrar.\n
+        Após passado o caso, passamos uma seta para a direita -&gt; (símbolo de menos e sinal de maior) e passaremos o que o código deve fazer se cair nesse caso. No meu exemplo, passei um print, mas você pode atribuir valores a variáveis, realizar operações e até mesmo chamar funções que explicarei mais para frente.\n
+        Outra maneira de usar o when é colocar uma variável imutável e fazê-la ser atribuída a um when, nos casos, após a seta, você colocará um valor que pode ser atribuído a essa variável, por exemplo:\n
+        val idade = 18\n
+        val faixaEtaria = when(idade) {\n
+        \t in 0..3 -> &quot;Neném&quot;\n
+        \t in 4..12 -> &quot;Criança&quot;\n
+        \t in 13..21 -> &quot;Adolescente&quot;\n
+        \t else -> &quot;Adulto&quot;\n
+        }\n
+        Dessa forma, a variável faixa etária poderá receber qualquer valor conforme o valor da variável idade.\n
+        Espero que tenha entendido, rode os códigos passados e faça os seus testes, até amanhã!
+    </string>
+
+    <string name="auto_incremento">Auto incremento</string>
+    <string name="auto_incremento_desc">
+        Até o momento, utilizamos variáveis que recebem diversos valores, mas às vezes queremos apenas somar mais um na própria variável, mas como saberemos qual será o próximo número? Por isso, aprenderemos hoje a auto incrementar variável.\n
+        É possível passar a própria variável como um valor de atribuição.\n
+        var x = 1\n
+        x = x\n
+        o var x, que vale 1, receberá o conteúdo da variável x, que vale 1. Mas isso não faz tanto sentido, mas é muito útil para utilizarmos a própria variável para fazermos uma contagem de passos, por exemplo.\n
+        var x = 1\n
+        x = x + 1\n
+        Temos três maneiras de auto incrementar, os dois primeiros servem para qualquer operação matemática, o último para acrescentar ou diminuir um. Analise na imagem acima e faça seus testes, isso será muito importante para as próximas aulas. Até lá!
+    </string>
+
+    <string name="laco_for">for</string>
+    <string name="laco_for_desc">
+        Iniciaremos em laços de repetição, um assunto muito importante e que você utilizará bastante, começaremos com o for.\n
+        Um laço de repetição é quando fazemos nosso código repetir uma quantidade desejada de vezes, por exemplo, se queremos realizar uma contagem de 0 até 10, podemos escrever 10 prints e passarmos uma variável que inicie em 0 e realize auto incremento até o 10, funciona! Mas temos um jeito de otimizar isso, imagina que seja uma contagem de 0 a 100...\n
+        A sintaxe do for é simples, passamos a palavra reservada for e abrimos parênteses, dentro dele definimos o nome de uma variável, após o nome colocamos in e colocamos 2 números entre dois pontos .., o primeiro indicando o número inicial e o segundo até onde ele contará, abrimos e fechamos chaves e dentro dela colocamos tudo que desejamos que seja repetido a quantidade indicada.\n
+        Na imagem acima, ficou uma contagem simples de 0 até 100, sendo que o segundo número do laço for eu defini como uma variável. Tente rodar o código e faça alguns testes.
+    </string>
+
+    <string name="laco_while">while</string>
+    <string name="laco_while_desc">
+        Outro laço de repetição é o while, hoje estudaremos ele e em que momento devemos usar ele ao invés do for.\n
+        A sintaxe do while é bem tranquila também, passamos à palavra reservada while, conjunto de parênteses e de chaves. Nos parênteses passaremos uma condição, como se fosse o if e, enquanto a condição for verdadeira, o loop permanecerá.\n
+        O mais comum de utilizarmos é com números, primeiro criamos uma variável anteriormente ao while, podemos definir ela como o valor inicial da contagem, na condição colocamos:\n
+        (varialvel &lt; valorFinal)\n
+        a condição dependerá de como será seu código, se for uma contagem crescente e quer que inclua o último número, precisa ser menor ou igual, caso decrescente e não inclua o número final, maior apenas.\n
+        AGORA UM DETALHE MUITO IMPORTANTE!\n
+        Lembre-se sempre de fazer um incremento ou decremento na variável que está sendo comparada, senão o laço de repetição entrará em um ciclo infinito, já que a variável não muda de valor e a condição será sempre a mesma.\n
+        Quando devemos optar no while?\n
+        — O while é uma estrutura ótima para qualquer código, mas podemos definir primordialmente ele quando precisamos de uma condição antes de entrar no laço (sem precisar de um if) ou quando queremos que a contagem seja diferente de um a um, podendo ser de 2 a 2, 5 a 5.\n
+        Criei o mesmo código da aula do for em while, compare os dois e faça seus testes!\n
+        Esse foi o while, espero que tenha gostado.
+    </string>
+
+    <string name="laco_repeat">repeat</string>
+    <string name="laco_repeat_desc">
+        E o último laço que estudaremos é o repeat.\n
+        repeat é um laço de repetição bem simples, tanto que a aula de hoje será bem rapidinha.\n
+        Sua sintaxe é, passando a palavra reservada repeat seguida por conjunto de parênteses e de chaves. No parêntese, colocaremos a quantidade que nosso código irá repetir e nas chaves o que será repetido, simples assim!\n
+        Analise o código acima e faça seus testes.
+    </string>
+
+    <string name="funcoes">funcoes - fun</string>
+    <string name="funcoes_desc">
+        Vamos supor que você precisa criar um aplicativo que tenha diversos botões, mas todos fazem o mesmo, vamos escrever o código da ação do botão diversas vezes? Lógico que não tem um método para isso!\n
+        Hoje falaremos sobre funções, funções servem para quando temos um código que queremos rodar diversas vezes, mas não em sequência e sim quando for chamado, seja por realizar uma ação, apertar um botão. A função armazena a quantidade de código que você quiser e basta chamá-la que ela realizará todo o código. Como se fosse uma variável, mas com sequência de códigos.\n
+        Para criar uma função, passamos a palavra reservada fun fora da fun main, criamos o nome dessa função, geralmente com um verbo, mostrarMenu ou criarCadastro, e novamente, seguido por um conjunto de parênteses e de chaves. Nos parênteses, colocaremos nada por enquanto, nas chaves colocaremos tudo que o nosso código precisará rodar quando essa função for chamada.\n
+        Na função main chamamos a funçao que acabamos de criar, passamos o nome de referência seguido pelos parênteses.\n
+        Repare na função que criei para mostrar um personagem de um jogo.
+    </string>
+    
+    <string name="parameters_fun">Funções com parâmetros</string>
+    <string name="parameters_fun_desc">
+        E se tivermos diversos personagens? Como podemos criar uma função para mostrar a propriedade de cada um?\n
+        Hoje aprenderemos a criar uma função com parâmetros, que seria uma função para quando precisamos enviar as informações para a função utilizar no código, criaremos uma função que mostrará as informações de um personagem flexivelmente.\n
+        Na mesma função da aula anterior, nos parênteses, passaremos os elementos de que precisamos no código, primeiro o nome de referência, logo em seguida dois pontos e o tipo que essa variável é, repare na linha 6 do código, essa será uma variável temporária, que só será utilizada na função. No print da função, tiramos tudo aquilo que é estático e colocaremos o nome da referência que criamos, lembrando de colocar o $ antes da variável da função.\n
+        Na chamada da função na main, temos que passar todos os parâmetros na ordem que criamos ou passando o nome da variável que criamos na função desejada e passamos o valor dela.\n
+        Espero que entenda a aula de hoje, até!
+    </string>
+
+    <string name="return_fun">Funções com retorno</string>
+    <string name="return_fun_desc">
+        Outra maneira de utilizar as funções, são as funções com retorno, fazendo a função retornar um valor após a sua chamada, ela pode ser com ou sem parâmetros. Hoje vamos criar função que retornará o nome ao contrário.\n
+        Fora da main, criamos uma função chamada inverter, que terá como parâmetro um nome do tipo String, após os parênteses do parâmetro, passamos dois pontos e o tipo que a função retornará, no nosso caso, como é um nome é do tipo String, mas depende do propósito da sua função./n
+        Para retornarmos um valor, basta utilizarmos a palavra reservada return seguido pelo valor de retorno, é possível utilizar um if/else para que em cada situação retorne uma coisa, mas vale ressaltar que assim que colocamos os dois pontos e o valor de retorno precisamos ter na função o return./n
+        Na nossa função inverter, apenas retornaremos o nome com um ponto reversed()./n
+        O retorno podemos armazenar em uma variável para utilizarmos durante o código ou podemos retornar no print, que será impresso na tela o valor de retorno./n
+        Teste o código da imagem acima.
+    </string>
+    
+    <string name="nullable_type">Variáveis nulas</string>
+    <string name="nullable_type_desc">
+        Finalizamos funções, espero que tenha praticado todos os tipos de funções. Hoje vamos falar sobre tipos de variáveis que podem ser nulas.\n
+        Quando criamos variáveis, elas podem ter diversos valores conforme os seus respectivos tipos, mas e se criamos uma variável do tipo String para armazenar o nome do pet de uma pessoa, até aqui tudo perfeito, mas e se ela não tiver pet? Para isso há uma maneira de guardar o tipo null(nulo) em uma variável.\n
+        Quando tentamos adicionar o valor null a uma variável comum, ela nos retornará um erro, dizendo que a variável não é capaz de ser nula.\n
+        Para resolvermos isso, basta colocarmos um ponto de interrogação (?), após o nosso tipo da variável, isso fará que informamos ao compilador que a variável pode ser nula ou não. Quando precisamos utilizar uma propriedade como a length (que retorna quantas letras nossa String tem), precisamos também colocar um ponto de interrogação após a variável, para garantir que o código não quebre ao tentar contar o tamanho de nada.\n
+        Bom por hoje foi só, fica ligado que amanhã iniciaremos nossa programação orientada a objetos, fui!
+    </string>
+    
+    <string name="classe_title">O que é uma class?</string>
+    <string name="classe_desc">
+        Vamos hoje introduzir a programação orientada a objetos(POO), que seria um conceito de como desenvolver programação, a POO é muito utilizada hoje em dia, diversas empresas abordam esse conceito como o principal e nada melhor do que começar explicando o que é uma classe, antes de ver código.\n
+        Classe, é como se fosse um modelo que criamos conforme a regra de negócio para utilizarmos a qualquer momento no código, vamos aos exemplos.\n
+        Vamos desenvolver um aplicativo para animais. No nosso modelo(classe), temos que pensar o que um pet tem.\n
+         - Pet tem nome;\n
+         - Pet tem dono;\n
+         - Pet tem um tipo (Cachorro, gato, papagaio...);\n
+         - Pet tem idade;\n
+         - Pet tem coloração/n
+        Se quisermos podemos ficar fazendo uma lista aqui o dia todo, terá bastante coisa que um pet tem. Mas precisamos aplicar o conceito da abstração, para um software que seja para um veterinário todos esses exemplos são válidos, mas não a coloração, não fará diferença ter ou não, assim como para um banho e tosa, não fará diferença a coloração e a idade, mas para um centro de adoção, é mega válido ter a coloração. Para isso precisamos ver o que o sistema precisa./n
+        Quando criado nossa classe, podemos criar diversos pets e utilizarmos durante o código.\n
+        Hoje foi uma aula mais teórica, mas espero que tenha entendido e gostado, um beijo e um queijo.
+    </string>
+
+    <string name="class_kotlin">Class em Kotlin</string>
+    <string name="class_kotlin_desc">
+        A partir de hoje colocaremos tudo que vimos no dia anterior em prática, será bem legal e mudará bastante a maneira que você faz código, então fica ligado!\n
+        Para criarmos uma classe em Kotlin, antes do main, colocamos a palavra reservada class e colocamos um nome Com a primeira letra em maiúsculo, é uma boa prática, por exemplo, Pessoa e Pet. Após o nome abrimos e fechamos chaves, que será onde colocaremos nossos atributos e métodos. Que vou explicar mais para frente.\n
+        Crie uma classe pessoa e certifique-se que está igual ao da imagem acima
+        Por hoje foi só e até amanhã!
+    </string>
+
+    <string name="atributos">Atributos</string>
+    <string name="atributos_desc">
+        Hoje falaremos sobre os atributos de uma classe.\n
+        Todo modelo tem características, por exemplo, uma class Pessoa, terá como característica, o nome, a idade, o gênero e entre outras coisas que será importante no nosso programa.\n
+        Os atributos são as características no nosso código, utilizaremos elas durante o código para caracterizar cada pessoa, mas como podemos criá-las?\n
+        Criamos os atributos, da mesma maneira que criamos uma variável, mas na classe temos que deixar um valor padrão, caso a pessoa não insira o valor, tenha um valor que será preenchido, podemos colocar também um atributo nulo, caso a pessoa não tenha, será null.\n
+        Então colocamos, var ou val, dependendo se queremos que o valor do atributo seja mudado futuramente, em seguida o nome identificador, dois pontos e o tipo do atributo. Precisamos passar um = e um valor padrão, pode ser aspas duplas vazias para String, ou 0 para os Int.\n
+        Observe o código acima e faça o seu também! Um abraço.
+    </string>
+
+    <string name="getter_setter">Getter e Setter</string>
+    <string name="getter_setter_desc">
+        Quando inserimos um valor no atributo estamos utilizando a propriedade Set e quando pegamos o valor do atributo, para realizar um print na tela, por exemplo, utilizamos o Get. Hoje vamos aprender a personalizar a jeito que pegamos e atribuímos valor do atributo.\n
+        Começando pelo get, o get é uma função que retorna o valor do atributo, para modificar isso abaixo do atributo, apertamos o tab do teclado para dar um espacinho e escrevemos get(), seguido por um sinal =, e ai que vem toda a estrutura que ele irá retornar, no atributo existe uma palavra reservada chamada field, que é o valor que contém no atributo, um get() normal retorna apenas o field, mas no nosso caso, faremos um get que retornará o nome com uma formatação, colocaremos o R no final, após o igual colocaremos entre aspas $field R.\n
+        Abaixo do get, daremos mais um tab e colocamos a palavra reservada set, com parênteses, e dentro dele colocamos value, será o valor que vamos passar para o atributo no código, seguido por um conjunto de chaves, nela colocamos o que quisermos, if/else, when, for... hoje colocaremos o field = value.toUpperCase(), uma propriedade para deixar o valor que colocarmos maiúsculo. Lembrando que uma atributo do tipo val não tem set(), certifique-se que está definido como var.\n
+        Mais para frente veremos o resultado! Até
+    </string>
+
+    <string name="metodos">Métodos</string>
+    <string name="metodos_desc">
+        Além de características, toda class também consegue realizar coisas. Seguindo o mesmo exemplo da classe Pessoa, ela consegue falar, andar, rir. São ações que uma pessoa pode realizar, métodos são como as ações.\n
+        Quando criamos uma classe, precisamos ou não que o mesmo realize ações, essas ações são chamadas de métodos, e ela pode realizar tudo que um código realiza, print, operações, criação de variável, entre outras coisas.\n
+        Criamos um método com uma função, passando a palavra reservada fun, o nome da função, seguido por conjunto de parênteses que poderá ser passado parâmetros, caso não tenha, deixe em branco. Assim como um retorno da função, só seguir a aula do dia 18. Dentro do método, poderá colocar o que quiser, assim que for chamado, tudo que está dentro será rodado.\n
+        Crie um método chamado falar(), que dentro dos parenteses terá um print realizando uma saudação e apresentando seu nome. Caso sinta dificuldades, siga a imagem acima.\n
+        Terminamos o básico de crianção de uma classe, amanhã instanciaremos na main, até amanhã!
+    </string>
+
+    <string name="instancias">Instanciando uma class</string>
+    <string name="instancias_desc">
+        Criamos nossa classe, criamos atributos, agora vamos usar isso no código, para isso precisamos instanciar.\n
+        Instanciar é basicamente criar o modelo que fizemos na classe. Para isso precisamos alocar a class em uma variável para conseguirmos usar durante o código.\n
+        A instância de uma classe é simples, precisamos passar o nome da classe com o maiúsculo, seguido por um conjunto de parenteses, tudo isso precisa ser alocado em uma variável, com qualquer nome, para utilizarmos futuramente.\n
+        Para utilizarmos um atributo em um print, colocamos entre aspas o cifrão $, que estamos acostumados, o nome que demos à variável que atribuiu a classe, com um ponto e o nome do atributo ou método que precisamos.
+    </string>
+
+    <string name="construtors">Construtores</string>
+    <string name="construtors_desc">
+        Concorda comigo que toda pessoa tem um nome? No nosso modelo, precisamos instanciar a classe e só depois por opção colocar o nome da pessoa que estamos criando, precisamos deixar como obrigação preencher o nome, para isso vamos utilizar os construtores.\n
+        Construtor é um método rodado assim que a classe é instanciada, hoje vamos criar um construtor que pede obrigatoriamente o nome da pessoa instanciada.\n
+        Crie outro código, em cima da função main, crie uma classe Pessoa seguido por um conjunto de parênteses, dentro dos parênteses, colocaremos nosso atributo nome. Está pronto!\n
+        Para instanciarmos essa classe agora, só mudará uma coisinha, temos que já passar o nome entre os parênteses da Pessoa.\n
+        Compare seu código com o da imagem acima, te vejo amanhã!
+    </string>
+
+    <string name="herenca">Herença</string>
+    <string name="herenca_desc">
+        Um conceito fundamental de POO é a herança, hoje vamos mostrar como é possível poupar muitas linhas de código com apenas um conceito.\n
+        Quando pensamos em um modelo para Gato e Cachorro, todo gato e cachorro come, bebe, anda... se formos criar uma classe para cada um ficará um código enorme e repetitivo. Para isso criamos uma classe mãe e colocamos o que os dois tem em comum, na hora de criar a classe Gato e Cachorro herdamos.\n
+        Toda classe que será herdada precisa ter um open na frente, para identificar que ela pode ser herdada. Para herdar basta colocar dois pontos antes do conjunto de chaves e o nome da classe que vai herdar.
+        Observe o código acima, copie e faça seus testes!
+    </string>
+
+    <string name="generics">Generics</string>
+    <string name="generics_desc">
+        Hoje criaremos uma classe para moldar uma questão, questão de prova. Toda questão tem uma pergunta e uma resposta. Toda pergunta é do tipo String, um texto, mas e a resposta, de qual tipo ela é? A resposta pode ter vários tipos, String, para questões matemáticas, Inteiro ou Double, ou até Boolean, para verdadeiro ou falso. Para deixar o tipo de um atributo, utilizamos Generics.
+        Generics nos permite definir o tipo do atributo na instância da classe, nos trazendo flexibilidade.\n
+        Para criar uma class generics, após o nome da classe, colocamos um sinal de menor e de maior 	&lt; &gt;, dentro colocaremos um identificador do tipo variável, eu coloquei um T maiúsculo, em seguida colocaremos parênteses, para criar um construtor, onde terá a pergunta do tipo String, e a resposta do tipo T.\n
+        Para instanciar é o mesmo!\n
+        Espero que tenha entendido até amanhã que estamos terminando!
+    </string>
+
+    <string name="enum_class">ENUM Class</string>
+    <string name="enum_class_desc">
+        Continuando com o código de ontem. E se quisermos colocar uma dificuldade de cada questão, qualificando entre, fácil, médio e difícil. Agora imagine que para classificar uns escrevam com acento, outros sem, uns com letra maiúscula primeiro, outras, tudo minúsculo. Precisamos padronizar o valor, para isso criaremos uma ENUM class.\n
+        ENUM class, é quando padronizamos os valores que um atributo pode ter.\n
+        A sintaxe da enum é simples, passamos fora da main, as palavras reservadas enum class, com o nome identificador, seguido por um conjunto de chaves, dentro colocaremos os valores padrões separados por vírgulas, recomenda-se deixar tudo em maiúsculo.\n
+        Para instanciar uma enum, precisamos colocar o identificador com um ponto e o valor padronizado.
+        Teste o código e faça seus testes, se cuida!
+    </string>
+
+    <string name="listas">Listas</string>
+    <string name="listas_desc">
+        Para finalizar, vamos introduzir a listas e coleções. Hoje vamos ver a mutableListOf. Que seria uma lista do tipo mutável, igual o var.\n
+        Uma lista é um conjunto de elementos do mesmo tipo, pode ser String, Int ou qualquer outro tipo e até mesmo uma classe que criamos. Lista serve para organizar vários elementos, muito útil para projetos mais complexos.\n
+        Para criar uma lista mutável criamos uma variável que receberá uma mutableListOf() e entre os parênteses passamos os elementos iniciais. Uma lista tem propriedades como:\n
+        add() → Para adicionar um elemento no final da lista.\n
+        remove() → Remove o elemento que você passar nos parênteses.\n
+        [0] → Acessa os elementos por índices, índice é um número inteiro iniciado em 0.\n
+        size → Retorna a quantidade de elementos da lista.\n
+        Para rodar por toda a lista, crie um for, onde o parêntese receberá um nome identificador, que será cada elemento da lista, seguido por um in e o nome da lista criada. Assim:\n
+        for(item in itens) {\n
+        &#009;println(item)\n
+        }\n
+        Ou como na imagem acima.\n
+        Esses foram nossos 30 dias espero que tenha gostado de Kotlin assim como eu gosto, pratique muito e veja as possibilidades e se joga! Até mais, \n
+        Atenciosamente,\n
+        Marlon Rodrigues.
+    </string>
+
+</resources>
